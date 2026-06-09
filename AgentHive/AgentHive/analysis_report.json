@@ -1,0 +1,48 @@
+{
+  "incoming_ticket": {
+    "ticket_number": "INC9999",
+    "category": "Network",
+    "priority": "P2 - High",
+    "issue": "VPN connection timeout error",
+    "description": "User is unable to connect to the corporate VPN from home office. Getting connection timeout error after entering credentials. This started happening after the latest Windows update.",
+    "requester": "john.doe@company.com",
+    "created_date": "2026-05-20T17:10:58.013824"
+  },
+  "analysis_timestamp": "2026-05-20T17:10:58.061683",
+  "similar_tickets_found": 3,
+  "similar_tickets": [
+    {
+      "rank": 1,
+      "ticket_id": "INC1000",
+      "similarity_score": 87.18268871307373,
+      "category": "Network",
+      "issue": "Unable to connect to VPN",
+      "resolution": "Reset VPN credentials in Active Directory. Instructed user to download latest VPN client version 5.2.1.\nVerified firewall rules allow VPN traffic on port 443. Issue resolved after client update and credential\nreset.",
+      "resolved_date": "2026-01-04 07:12:31"
+    },
+    {
+      "rank": 2,
+      "ticket_id": "INC1009",
+      "similarity_score": 50.06978511810303,
+      "category": "Database",
+      "issue": "SQL Server connection timeout",
+      "resolution": "Verified SQL Server service running. Checked firewall rules for port 1433. Increased connection\ntimeout in application config from 30 to 60 seconds. Optimized slow-running queries. Connection stable\nnow.",
+      "resolved_date": "2026-01-09 14:12:31"
+    },
+    {
+      "rank": 3,
+      "ticket_id": "INC1010",
+      "similarity_score": 45.58687210083008,
+      "category": "Network",
+      "issue": "Intermittent network connectivity",
+      "resolution": "Replaced faulty network cable. Updated network adapter drivers to latest version. Changed wireless\nchannel to avoid interference. Disabled power management for network adapter. Connectivity now\nstable.",
+      "resolved_date": "2026-02-23 22:12:31"
+    }
+  ],
+  "recommended_solution": {
+    "confidence": "HIGH",
+    "source_ticket": "INC1000",
+    "similarity_score": 87.18268871307373,
+    "resolution": "Reset VPN credentials in Active Directory. Instructed user to download latest VPN client version 5.2.1.\nVerified firewall rules allow VPN traffic on port 443. Issue resolved after client update and credential\nreset."
+  }
+}
